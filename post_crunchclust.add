@@ -1,0 +1,6 @@
+Copy and Paste the following command in the directory where you are performing the cleaning.
+Substitute X in "crunch.clstr_X" with the (-d), i.e. the value you used for the maximum number of base pair differences. 
+i.e. crunch.clstr_14
+
+cat crunch.clstr_X | gawk '/^Cluster/;/^>/{a=$1;sub(">","",a);print a}' | tr '\n' ',' | sed 's/,Cluster/\nCluster/g' | gawk -F "," '/^Cluster/{a=$1;$1="";gsub(" ",",",$0);print $0}' | sed 's/^,//;s/,$//' | tr '\n' '\t' > Fungi_temp.list
+
