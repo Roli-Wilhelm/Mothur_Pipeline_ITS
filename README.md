@@ -9,7 +9,7 @@ Provides ALL necessary files to use the R script: "Mothur_to_PhyloSeq_to_Differe
 
 This script is not meant to be a completely hands-off method for processing ITS region data. It IS fully automated, but only in so far as it executes all the pre-set instructions. If your library requires different processing parameters, you will have to manually alter the script. It will do a decent job on your data as is, based on the fact multiple colleagues in my lab have used an nearly identical set of commands on large datasets (500+ libraries).
 
-Ths script is meant to offer a simple archetype. There is a different pipeline offered through QIIME (<http://qiime.org/tutorials/fungal_its_analysis.html>), which I have previously used successfully. However, I have not compared the two. The mothur GUI would be a cumbersome way of performing this script b/c it is more customized in its use of crunchclust for OTU generation. 
+Ths script is meant to offer a simple archetype. There is a different pipeline offered through QIIME (<http://nbviewer.ipython.org/github/qiime/qiime/blob/1.8.0/examples/ipynb/Fungal-ITS-analysis.ipynb>), which I have previously used successfully. However, I have not compared the two. The mothur GUI would be a cumbersome way of performing this script b/c it is more customized in its use of crunchclust for OTU generation. 
 
 Dependencies:
 
