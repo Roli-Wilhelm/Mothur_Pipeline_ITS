@@ -272,6 +272,23 @@ if SFF or RERUN:
 			"./"+OUTPUT+"/"
 		]))
 
+		## Provide a version of the taxonomy file acceptable for importing into R
+		os.system(' '.join([
+			"cp",
+			"./"+OUTPUT+"/"+NAME+"_final.taxonomy",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
+		]))
+
+		os.system(' '.join([
+			"sed -i 's/	/;/g'",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
+		]))
+
+		os.system(' '.join([
+			"sed -i 's/;//g'",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
+		]))
+
 	else:
 		## Start from the earliest point in the MOTHUR pipeline
 
@@ -423,6 +440,23 @@ if SFF or RERUN:
 			"./"+OUTPUT+"/"
 		]))
 
+		## Provide a version of the taxonomy file acceptable for importing into R
+		os.system(' '.join([
+			"cp",
+			"./"+OUTPUT+"/"+NAME+"_final.taxonomy",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
+		]))
+
+		os.system(' '.join([
+			"sed -i 's/	/;/g'",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
+		]))
+
+		os.system(' '.join([
+			"sed -i 's/;//g'",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
+		]))
+
 ## If user wants to provide only a .fasta and .qual file for analysis.
 else:		
 	if CRUNCH:
@@ -493,6 +527,23 @@ else:
 			"mv",
 			NAME+"_final.*",
 			"./"+OUTPUT+"/"
+		]))
+
+		## Provide a version of the taxonomy file acceptable for importing into R
+		os.system(' '.join([
+			"cp",
+			"./"+OUTPUT+"/"+NAME+"_final.taxonomy",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
+		]))
+
+		os.system(' '.join([
+			"sed -i 's/	/;/g'",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
+		]))
+
+		os.system(' '.join([
+			"sed -i 's/;//g'",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
 		]))
 
 	else:
@@ -640,6 +691,23 @@ else:
 			"mv",
 			NAME+"_final.*",
 			"./"+OUTPUT+"/"
+		]))
+
+		## Provide a version of the taxonomy file acceptable for importing into R
+		os.system(' '.join([
+			"cp",
+			"./"+OUTPUT+"/"+NAME+"_final.taxonomy",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
+		]))
+
+		os.system(' '.join([
+			"sed -i 's/	/;/g'",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
+		]))
+
+		os.system(' '.join([
+			"sed -i 's/;//g'",
+			"./"+OUTPUT+"/"+NAME+"_final.R.taxonomy"
 		]))
 
 stop = timeit.default_timer()
