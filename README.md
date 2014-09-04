@@ -3,7 +3,7 @@ Mothur_Pipeline_ITS
 
 Standard Pipeline for Cleaning and Annotating Fungal ITS region phylogenetic gene libraries
 
-Provides ALL necessary files to use the R script: "Mothur_to_PhyloSeq_to_Differential_Abundance_Tools"
+**Provides ALL necessary files to use the R script**: "Mothur_to_PhyloSeq_to_Differential_Abundance_Tools"
 
 (in one case, a specially formatted taxonomy file)
 
